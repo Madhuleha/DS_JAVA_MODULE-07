@@ -4,11 +4,15 @@
 To write a program that detects a cycle in a linked list and returns the node where the cycle begins.
 If there is no cycle, the program should return null without modifying the linked list.
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Start the program.
+2.Define a Node class containing data and next.
+3.Create a linked list and manually introduce a cycle for testing.
+4.Use Floyd’s Cycle Detection Algorithm (Tortoise and Hare method):
+5.Move one pointer (slow) one step and another (fast) two steps.
+6.If they meet, a cycle exists.
+7.To find the start node of the cycle, reset one pointer to the head and move both one step at a time until they meet again.
+8.Display the starting node of the cycle, or print “No cycle detected.” if none exists.
+9.Stop the program.
 
 ## Program:
 ```
